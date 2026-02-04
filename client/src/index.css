@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Colors - Deep Slate / richness */
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    /* Card & Surfaces - Slightly lighter than bg */
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    /* Brand Colors - Emerald & Indigo gradients */
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-indigo-500/30;
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(79, 70, 229, 0.08), transparent 25%), 
+        radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.08), transparent 25%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+    .glass {
+        @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    }
+    .glass-card {
+        @apply bg-gray-900/40 backdrop-blur-xl border border-white/10 shadow-xl;
+    }
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-indigo-400;
+    }
+}
