@@ -1,4 +1,4 @@
-# 🍃 SplitMint - Premium Fintech Expense Tracker
+# 🍃 SplitWise - Premium Fintech Expense Tracker
 
 SplitMint is a modern, high-performance fintech application designed to simplify shared expense tracking with a **Premium Dark** aesthetic, glassmorphism, and seamless user experience.
 
@@ -46,3 +46,4 @@ npm run dev
 
 ---
 *Built with ❤️ for a better fintech experience.*
+
